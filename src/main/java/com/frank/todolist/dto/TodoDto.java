@@ -1,17 +1,19 @@
 package com.frank.todolist.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class TodoDto {
-    private String user;
     private int id;
     private String title;
     private String content;
     private String isDone;
-    private int sequence;
+    private String user;
+    private String result;
 }
